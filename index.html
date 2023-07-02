@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hit The Mole</title>
+  <link rel="icon" type="image/x-icon" href="/Images/hit.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h2 class="heading">Hit The Mole</h2>
+  <div class="container">
+    <table>
+      <tr>
+        <td>
+          <button id="num1" onclick="clicked(1)"> <img src="/Images/RealHole.png" alt="img"> </button>
+        </td>
+        <td>
+          <button id="num2" onclick="clicked(2)"> <img src="/Images/RealHole.png" alt="img"> </button>
+        </td>
+        <td>
+          <button id="num3" onclick="clicked(3)"> <img src="/Images/RealHole.png" alt="img"> </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button id="num4" onclick="clicked(4)"> <img src="/Images/RealHole.png" alt="img"> </button>
+        </td>
+        <td>
+          <button id="num5" onclick="clicked(5)"> <img src="/Images/RealHole.png" alt="img"> </button>
+        </td>
+        <td>
+          <button id="num6" onclick="clicked(6)"> <img src="/Images/RealHole.png" alt="img"> </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button id="num7" onclick="clicked(7)"> <img src="/Images/RealHole.png" alt="img"> </button>
+        </td>
+        <td>
+          <button id="num8" onclick="clicked(8)"> <img src="/Images/RealHole.png" alt="img"> </button>
+        </td>
+        <td>
+          <button id="num9" onclick="clicked(9)"> <img src="/Images/RealHole.png" alt="img"> </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <br>
+  <small> *Each game lasts for 60 sec. </small> <br>
+
+  <div class="results">
+    <table>
+      <tr>
+        <td style="height: 20px;">
+          <p id="printtime" style="margin-left: 15px;"></p>
+        </td>
+        <td style="height: 20px;">
+        </td>
+        <td style="height: 20px;">
+          <p id="printmsg" style="margin-left: 15px;"></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+  <label for="difficulty">Difficulty:</label>
+  <select id="difficulty">
+    <option value="2500">Easy</option>
+    <option value="1400">Medium</option>
+    <option value="700">Difficult</option>
+  </select>
+
+  <button class="startbtn" onclick="startGame()">
+    <center>Start</center>
+  </button>
+
+
+
+
+
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+
+</body>
+
+</html>
