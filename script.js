@@ -4,6 +4,7 @@ let hit = false;
 
 let ran = 1;
 let idInter = 0;
+
 let img = document.getElementById("num" + ran).firstElementChild;
 function lighting(speed) {
   idInter = setInterval(function() {
@@ -26,16 +27,19 @@ function timeBro(speed) {
     document.getElementById("printtime").innerHTML = "Time : " + a + " sec";
     a++;
     speed = Number.parseInt(speed);
+    /* Activate below code for max difficulty  */
+    /*
     if (1 == (a % 10) && a != 1) {
-      console.log("Hello1");
       clearInterval(idInter);
       img = document.getElementById("num" + ran).firstElementChild;
       img.src = 'Images/RealHole.png';
       speed = speed - 110;
-      console.log("Hello2");
       console.log(speed);
       lighting(speed);
     }
+    */
+    /* Till here */
+
     if (a > 60) {
       clearInterval(idInter);
       img = document.getElementById("num" + ran).firstElementChild;
