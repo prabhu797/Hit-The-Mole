@@ -17,7 +17,7 @@ function lighting(speed) {
     ran = newRan;
     hit = false;
     img = document.getElementById("num" + ran).firstElementChild;
-    img.src = 'Images/Hole.png';
+    img.src = '/Images/Hole.png';
   }, speed);
 }
 
@@ -43,7 +43,7 @@ function timeBro(speed) {
     if (a > 60) {
       clearInterval(idInter);
       img = document.getElementById("num" + ran).firstElementChild;
-      img.src = 'Images/RealHole.png';
+      img.src = '/Images/RealHole.png';
       ran = 1;
       a = 1;
       score = 0;
@@ -56,7 +56,7 @@ function timeBro(speed) {
 function clicked(num) {
   if (ran == num && hit == false) {
     img = document.getElementById("num" + ran).firstElementChild;
-    img.src = 'Images/hit.png';
+    img.src = '/Images/hit.png';
     score++;
     hit = true;
     document.getElementById("printmsg").innerHTML = "Score : " + score;
