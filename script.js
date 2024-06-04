@@ -10,7 +10,7 @@ function lighting(speed) {
   idInter = setInterval(function() {
     console.log("Hello");
     img = document.getElementById("num" + ran).firstElementChild;
-    img.src = 'https://github.com/prabhu797/Hit-The-Mole/blob/main/Images/RealHole.png';
+    img.src = 'Images/RealHole.png';
     do {
       newRan = Math.floor(Math.random() * 9) + 1;
     }while(ran == newRan);
